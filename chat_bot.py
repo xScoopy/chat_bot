@@ -38,7 +38,10 @@ def get_bot_response(user_response) :
 
 #Gather user response 
 user_response = ""
-while string.upper(user_response) != "DONE" or "done" or "Done":
+while True:
     user_response = input("Which facial feature would you like a suggestion for? ")
+    if user_response.upper() == "DONE":
+        break
+    
     bot_response = get_bot_response(user_response)
     print(bot_response)  
