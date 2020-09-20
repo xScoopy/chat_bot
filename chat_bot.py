@@ -22,17 +22,23 @@ def get_bot_response(user_response) :
     bot_response_chin = ["super cleft chin", "Wide powerful jawline", "Pointy chin!"]
     
     #conditionals for user responses
-    if upper(user_response) == "NOSE":
+    if user_response.upper() == "NOSE":
         return choice(bot_response_nose)
-    elif upper(user_response) == "MOUTH":
+    elif user_response.upper() == "MOUTH":
         return choice(bot_response_mouth)
-    elif upper(user_response) == "EAR" or "EARS":
+    elif user_response.upper() == "EAR" or "EARS":
         return choice(bot_response_ear)
-    elif upper(user_response) == "EYE" or "EYES":
+    elif user_response.upper() == "EYE" or "EYES":
         return choice(bot_response_eye)
-    elif upper(user_response) == "CHIN" or "JAW":
+    elif user_response.upper() == "CHIN" or "JAW":
         return choice(bot_response_chin)
     else:
         return "That's not a facial feature I'm able to help out with quite yet, please try a different selection or type 'done' to quit. "
     
-    
+
+#Gather user response 
+user_response = ""
+while string.upper(user_response) != "DONE" or "done" or "Done":
+    user_response = input("Which facial feature would you like a suggestion for? ")
+    bot_response = get_bot_response(user_response)
+    print(bot_response)  
