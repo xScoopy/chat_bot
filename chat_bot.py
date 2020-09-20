@@ -26,11 +26,11 @@ def get_bot_response(user_response) :
         return choice(bot_response_nose)
     elif user_response.upper() == "MOUTH":
         return choice(bot_response_mouth)
-    elif user_response.upper() == "EAR" or "EARS":
+    elif user_response.upper() == "EARS":
         return choice(bot_response_ear)
-    elif user_response.upper() == "EYE" or "EYES":
+    elif user_response.upper() == "EYES":
         return choice(bot_response_eye)
-    elif user_response.upper() == "CHIN" or "JAW":
+    elif user_response.upper() == "CHIN":
         return choice(bot_response_chin)
     else:
         return "That's not a facial feature I'm able to help out with quite yet, please try a different selection or type 'done' to quit. "
@@ -42,6 +42,6 @@ while True:
     user_response = input("Which facial feature would you like a suggestion for? ")
     if user_response.upper() == "DONE":
         break
-    
+
     bot_response = get_bot_response(user_response)
     print(bot_response)  
