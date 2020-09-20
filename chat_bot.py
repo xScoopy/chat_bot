@@ -9,10 +9,13 @@ bot_response_nose = ["Make it long and narrow", "Short and stubby", "Crooked wit
     #Mouth list
 bot_response_mouth = ["Skinny bird lips!", "Crooked smile", "Throw some botox in there", "Super wide like the Joker"]
     #Ear list
-bot_response_ear = ["Big floppy ears", "Droopy earlobes", ""]
-
-
-
+bot_response_ear = ["Big floppy ears", "Droopy earlobes", "Pointy like an elf!", "Normal ears wouldn't hurt"]
+    #Eye list
+bot_response_eye = ["Big blue eyes!", "Go for the Green", "Beautiful brown", "Rambunctious Red!", "All black(like a demon)"]
+    #Chin list
+bot_response_chin = ["super cleft chin", "Wide powerful jawline", "Pointy chin!"]
 #Creation of function : get_bot_response()
 get_bot_response(user_response) :
+    return
+
     
